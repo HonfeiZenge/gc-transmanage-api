@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front End</title>
+  <link rel="stylesheet" href="./assets/chunk-css-tail7712.css">
+</head>
+<body class="bg-gray-200">
+  
+  <div id="wrapper">
+    <div id="modal_body">
+    </div>
+  </div>
+  <div class="grid md:grid-cols-5 h-screen">
+    <section class="md:col-span-1 bg-gray-700 flex flex-col">
+      <header class="bg-gray-800 shadow-md flex justify-center p-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2 text-white" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+        </svg>
+        <h1 class="text-white text-xl text-center">
+            Great Class
+        </h1>
+      </header>
+      <main class="flex-1">
+        <a href="index.html">
+          <div class="flex p-3 text-gray-200 cursor-pointer hover:bg-blue-400 hover:text-white transition ease-out duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            <h1 class="pl-2">
+              Dashboard
+            </h1>
+          </div>
+        </a>
+        <a href="create.html">
+          <div class="flex p-3 text-gray-200 cursor-pointer hover:bg-blue-400 hover:text-white transition ease-out duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+            </svg>
+            <h1 class="pl-2">
+              Input Transaksi
+            </h1>
+          </div>
+        </a>
+      </main>
+      <footer class="bg-gray-800 flex justify-end">
+        <div class="text-white text-2xl p-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </div>
+      </footer>
+    </section>
+    
+    <main class="md:col-span-4">
+      <p class="text-gray-600 text-l hover:text-white p-4 bg-white shadow-md">Dashboard</p>
+      <div class="rounded-md bg-white m-7">
+        <header class="flex justify-between bg-white rounded-t p-3">
+          <h1 class="text-gray-600">Show All Transaction</h1>
+          <p class="text-gray-500 text-xs mt-1">docs</p>
+        </header>
+        <hr class="w-full border-gray-300">
+
+        <main class="p-3 mt-4">
+          <table class="table w-full border border-gray-600 bg-white">
+            <thead class="bg-gray-400">
+              <tr class="border-b-2 border-gray-600">
+                <th class="transaction__table__head py-3 th__data">#</th>
+                <th class="transaction__table__head">Nama Player</th>
+                <th class="transaction__table__head">Player Class</th>
+                <th class="transaction__table__head">Pick Up</th>
+                <th class="transaction__table__head">Rate</th>
+                <th class="transaction__table__head">Player Deposit</th>
+                <th class="transaction__table__head">Company Modal</th>
+                <th class="transaction__table__head">Tanggal</th>
+                <th class="transaction__table__head" colspan="2">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="show__transaction">
+              <!-- show data from api -->
+              <tr class="border border-gray-600">
+                
+              </tr>
+            </tbody>
+          </table>
+        </main>
+      </div>
+    </main>
+  </div>
+  
+  <script src="./assets/bundle.js"></script>
+</body>
+</html>

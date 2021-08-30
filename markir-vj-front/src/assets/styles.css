@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.text__form {
+  @apply w-full px-3 py-2 rounded-lg border-gray-300 shadow-sm focus:border-red-300 focus:ring-red-300
+}
+
+.transaction__table__head {
+  @apply border border-gray-600 font-bold text-gray-600 text-center
+}
+
+.transaction__table__data {
+  @apply border border-gray-600 text-gray-500 text-center
+}
+
+.edit__process__bg {
+  @apply fixed top-0 w-full h-full bg-black bg-opacity-20
+}
+
+.modal__body {
+  @apply w-96 bg-white p-10 my-12 mx-auto border rounded-md
+}
