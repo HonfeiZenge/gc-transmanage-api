@@ -152,7 +152,8 @@ const deleteTransaction = async (req, h) => {
 // Search transaction by accName
 const searchTransactionByName = async (req, h) => {
   try {
-    const query = req.query.term;
+    const query = req.query.term
+    const limit = Number(req.query.limit)
     const transaction = req.mongo.db.collection('transactions')
     const results = await transaction.aggregate([
       {
@@ -167,7 +168,7 @@ const searchTransactionByName = async (req, h) => {
           $project : {accName:1, accServer:1, startGold:1, finishGold:1, goldDeposited:1, goldRate:1, insertedAt:1}
       },
       {
-          $limit: 18
+          $limit: limit
       }
       ]).sort({ insertedAt: -1 }).toArray()
 
